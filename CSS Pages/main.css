@@ -10,6 +10,10 @@ body {
     padding: 20px;
 }
 
+header {
+    padding-bottom: 20px;
+}
+
 .titleBar img:hover {
     box-shadow: inset 0 0 10px black;
 }

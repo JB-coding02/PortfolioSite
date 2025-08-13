@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+tr > td {
+    text-align: center;
+}
+
+.red {
+    background: linear-gradient(to bottom, red, rgb(255, 155, 0));
+}
+
+.orange {
+    background: linear-gradient(to bottom, rgb(255, 155, 0) , yellow);
+}
+
+.yellow {
+    background: linear-gradient(to bottom, yellow, green);
+}
+
+.green {
+    background: linear-gradient(to bottom, green, blue);
+}
+
+.blue {
+    background: linear-gradient(to bottom, blue, indigo);
+}
+
+.purple {
+    background: linear-gradient(to bottom, indigo, violet);
+}
+
+.repeat {
+    background: linear-gradient(to bottom, violet 0%, pink 50%, red 100%);
+}
+
+tr > td > a:hover {
+    text-align: center;
+    color: turquoise;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+

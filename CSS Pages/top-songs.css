@@ -3,13 +3,23 @@ body {
     background-color: white;
 }
 
+main {
+    justify-content: center;
+    font-size: 1em;
+    background-color: red;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 0 5px black, 0 0 10px black;
+}
+
 table, th, td {
     border: 0px solid black;
     border-collapse: collapse;
     padding: 8px;
-}
-
-tr > td {
     text-align: center;
 }
 
@@ -42,11 +52,10 @@ tr > td {
 }
 
 tr > td > a:hover {
-    text-align: center;
     color: turquoise;
 }
 
-a {
+tr > td > a {
     text-decoration: none;
     color: black;
 }

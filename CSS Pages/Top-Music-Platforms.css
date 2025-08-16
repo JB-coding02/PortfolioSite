@@ -1,3 +1,8 @@
+main {
+    background-color: darkred;
+    padding-top: 1em;
+}
+
 body {
     font-size: 2em;
 }
@@ -43,7 +48,7 @@ div.container {
 }
 
 .Amazon-Music > a:hover {
-    color: rgb(0, 121, 111);
+    color: rgb(0, 181, 166);
     text-decoration: none;
 }
 

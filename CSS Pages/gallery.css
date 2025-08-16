@@ -1,4 +1,19 @@
+html {
+    background-color: green !important;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: inherit;
+}
+
+main {
+    background-color: green;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+td > img {
+    max-width: 100%;
 }

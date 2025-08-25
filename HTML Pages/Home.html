@@ -10,22 +10,50 @@
 
     <style>
         main {
-            background-color: darkred;
+          background-color: darkred;
+        }
+
+        p {
+          margin-bottom: 0 !important;
         }
 
         div > img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          display: block;
         }
 
         .multiple-items {
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            height: 400px;
-            text-align: center;
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          height: 400px;
+          text-align: center;
+        }
+
+        form {
+          background-color: darkred;
+          justify-content: center;
+        }
+
+        .form-label {
+          font-size: smaller;
+          display: block;
+          text-align: center;
+        }
+
+        .form-control {
+          min-width: 200px;
+        }
+
+        input {
+          min-width: fit-content;
+        }
+
+        div {
+          width: min-content;
+          justify-content: center;
         }
     </style>
     <link
@@ -44,15 +72,15 @@
   </head>
   <body>
     <header>
-        <a href="Home.html" class="titleBar"><img src="/Images/MusicIcon.png" alt="Placeholder for titlebar image"></a>
-        <nav>
-          <ul>
-            <li><a class="inactive" href="gallery.html">Gallery</a></li>
-            <li><a class="inactive" href="top-songs.html">Top Songs</a></li>
-            <li><a class="inactive" href="fun.html">Fun</a></li>
-            <li><a class="inactive" href="Top-Music-Platforms.html">Popular Platforms</a></li>
-          </ul>
-        </nav>
+      <a href="Home.html" class="titleBar"><img src="/Images/MusicIcon.png" alt="Placeholder for titlebar image"></a>
+      <nav>
+        <ul>
+          <li><a class="inactive" href="gallery.html">Gallery</a></li>
+          <li><a class="inactive" href="top-songs.html">Top Songs</a></li>
+          <li><a class="inactive" href="fun.html">Fun</a></li>
+          <li><a class="inactive" href="Top-Music-Platforms.html">Popular Platforms</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <h1>Welcome to Music Vibes</h1>
@@ -63,25 +91,35 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/slick/slick.min.js"></script>
 
-    <script type="text/javascript">
+      <script type="text/javascript">
         $(document).ready(function(){
-            $('.single-item').slick({ // single item shown on screen at a time
-            //  setting-name: setting-value
-                arrows: true,
-                dots: true,
-                easing: true,
-                autoplay: true,
-                autoplaySpeed: 5000,
-                pauseOnHover: true
-            });
-            $('.multiple-items').slick({ // multiple items shown on screen at a time
-                arrows: true,
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true
-            });
+          $('.single-item').slick({ // single item shown on screen at a time
+          //  setting-name: setting-value
+            arrows: true,
+            dots: true,
+            easing: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            pauseOnHover: true
+          });
+          $('.multiple-items').slick({ // multiple items shown on screen at a time
+            arrows: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+          });
         });
-        </script>
+      </script>
+      <footer>
+        <form action="" method="get">
+          <div>
+            <label class="form-label" for="artistEmail">To any interested artists if you want to have your song or album listed here please submit your email here and i will contact you when time allows.</label>
+            <input class="form-control" type="email" id="artistEmail" name="email" placeholder="Example: example@gmail.com" required>
+            <br>
+            <input class="btn btn-outline-dark" type="submit" value="Submit">
+          </div>
+        </form>
+      </footer>
   </body>
 </html>
